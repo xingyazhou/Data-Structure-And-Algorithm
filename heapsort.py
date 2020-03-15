@@ -56,7 +56,7 @@ def heapsort(a):
     return a        
         
     
-a=[10,8,3,8.0,4,5,7]
+a=[10, 8, 3, 8.0, 4, 5, 7]
 print(heapsort(a))       
     
 # Output [3, 4, 5, 7, 8, 8.0, 10]
