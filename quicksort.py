@@ -34,7 +34,7 @@ def partition(a, l, r):
     return i+1
 
     
-a=[10,8,3,8.0,4,5,7]
+a=[10, 8, 3, 8.0, 4, 5, 7]
 quicksort(a, 0, len(a)-1)
 print (a)
 
