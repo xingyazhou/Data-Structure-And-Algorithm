@@ -1,12 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Mar 16 21:12:50 2020
-
-@author: xingy
-"""
-
-# -*- coding: utf-8 -*-
-"""
 Created on Mon Mar 16 20:30:46 2020
 
 @author: xingya
