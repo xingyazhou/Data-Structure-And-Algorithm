@@ -14,7 +14,7 @@ Created on Mon Mar 16 20:30:46 2020
 # 4. There must be no duplicate nodes.
 
 
- # node of BST   
+# node of BST   
 class Node: 
     def __init__(self,key): 
         self.left = None
@@ -41,13 +41,14 @@ def insert(root, node):
         else:
             insert(root.right, node)
 
-#  inorder tree traversal :  from smallest element to largest element, keys in ascending order         
+# inorder tree traversal :  from smallest element to largest element, keys in ascending order         
 def inorder(root):
     if root:
         inorder(root.left)
         print(root.key)
         inorder(root.right)
-        
+
+# Test bst        
 r = Node(50) 
 insert(r,Node(30)) 
 insert(r,Node(20)) 
