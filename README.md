@@ -1,4 +1,5 @@
 # Data-Structure-And-Algorithm
+Sorting, Searching and Graph Algorithms
 
 There are 3 folders in this repository<br>
 **Graph/**   In this folder, different graph algorithms are included <br>
