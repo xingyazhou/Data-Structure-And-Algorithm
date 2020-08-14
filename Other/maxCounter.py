@@ -127,6 +127,9 @@ def GetPositions(N,A):
     return l
     
             
-A = [0,0,0,0,0]
+A = [3,4,4,6,1,4,4]
 
 print(MaxCounters(5,A))
+
+# Output
+# [3,2,2,4,2]
