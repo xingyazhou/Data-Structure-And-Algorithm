@@ -73,7 +73,7 @@ A=[1,3,1,4,2,3,5,4]
 
 print(FrogRiverOne(5,A))
 
-# Outpu
+# Output
 # 6
 
 
