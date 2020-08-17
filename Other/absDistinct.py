@@ -57,6 +57,8 @@ def AbsDistinct(A):
 
 A= [-5, -3, -1, 0, 3, 6]
 print(AbsDistinct(A))
+
 # Output
 # 5
+# time complexity: O(N) or O(N*log(N))
     
