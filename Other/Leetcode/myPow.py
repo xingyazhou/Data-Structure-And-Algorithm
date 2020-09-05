@@ -2,12 +2,10 @@
 """
 Created on Sat Sep  5 17:50:56 2020
 
-
 50. Pow(x, n)
 Medium
 Implement pow(x, n), which calculates x raised to the power n (i.e. xn).
 
- 
 Example 1:
 
 Input: x = 2.00000, n = 10
@@ -58,10 +56,12 @@ class Solution(object):
                 
         for x in r:
              myPower = x*myPower
+             
+        if n < 0:
+            myPower = 1/myPower
                          
         return(myPower)
             
-
 s = Solution()
 print(s.myPow(3, 5))
 
@@ -72,3 +72,4 @@ print(s.myPow(3, 5))
 Runtime: 16 ms, faster than 90.81% of Python online submissions for Pow(x, n).
 Memory Usage: 12.6 MB, less than 95.73% of Python online submissions for Pow(x, n).
 """
+
