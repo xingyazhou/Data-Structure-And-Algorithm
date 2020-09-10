@@ -11,4 +11,4 @@
 ### [Heapq](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Heapq) In this folder, heapq (priority queue) is used to solve problems <br>
 ### [Other](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Other)   In this folder, some other interesting python scripts are included <br>
 
-Each algorithm includes time complexity and a simple test
+
