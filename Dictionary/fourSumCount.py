@@ -2,7 +2,7 @@
 """
 Created on Wed Sep 16 09:32:01 2020
 
-4Sum II
+454. 4Sum II (Meduim)
 
 Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
 
