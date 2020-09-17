@@ -9,6 +9,7 @@
 ### [Dictionary](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Dictionary) In this folder, Dictionary/HashMap is used to solve different problems <br>
 ### [Two Pointers](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/TwoPointers) In this folder, Two Pointers are used to solve problems <br>
 ### [Heapq](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Heapq) In this folder, heapq (priority queue) is used to solve problems <br>
+### [LinkedList](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/LinkedList)
 ### [Other](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Other)   In this folder, some other interesting python scripts are included <br>
 
 
