@@ -11,7 +11,8 @@
 ### [Heapq](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Heapq) In this folder, heapq (priority queue) is used to solve problems <br>
 ### [LinkedList](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/LinkedList) In this folder, Linked List is used to solve problems <br>
 ### [Greedy](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Greedy) In this folder, Greedy algorithm is used to solve problems <br>
-### [DepthFirstSearch](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/DepthFirstSearch) Inthis folder, algorithm DFS is used to solve problems
+### [DepthFirstSearch](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/DepthFirstSearch) In this folder, algorithm DFS is used to solve problems<br>
+### [BreadthFirstSearch](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/BreadthFirstSearch) In this folder, algorithm BFS is used to solve the problems<br>
 ### [Other](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Other)   In this folder, some other interesting python scripts are included <br>
 
 
