@@ -13,6 +13,7 @@
 ### [Greedy](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Greedy) In this folder, Greedy algorithm is used to solve problems <br>
 ### [DepthFirstSearch](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/DepthFirstSearch) In this folder, algorithm DFS is used to solve problems<br>
 ### [BreadthFirstSearch](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/BreadthFirstSearch) In this folder, algorithm BFS is used to solve the problems<br>
+### [MinimumSpanningTree](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/MinimumSpanningTree) In this folder, MST is solved with different alrotithms<br>
 ### [Other](https://github.com/xingyazhou/Data-Structure-And-Algorithm/tree/master/Other)   In this folder, some other interesting python scripts are included <br>
 
 
