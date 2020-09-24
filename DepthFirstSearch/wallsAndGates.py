@@ -32,7 +32,6 @@ After running your function, the 2D grid should be:
 """
 
 INF =  2147483647
-
 class Solution(object):
     def wallsAndGates(self, rooms):
         """
@@ -56,19 +55,19 @@ class Solution(object):
         d = rooms[i][j] + 1
 
         if i-1 >= 0 and rooms[i-1][j] != -1 and rooms[i-1][j] > d:
-            rooms[i-1][j] = min( rooms[i-1][j], d)
+            rooms[i-1][j] = d
             self.dfs(rooms, i-1, j)
        
         if i+1 < r and rooms[i+1][j] != -1 and rooms[i+1][j] > d:
-            rooms[i+1][j] = min(rooms[i+1][j], d)
+            rooms[i+1][j] = d
             self.dfs(rooms, i+1, j)
                 
         if j-1 >= 0 and rooms[i][j-1] != -1 and rooms[i][j-1] > d:
-            rooms[i][j-1] = min(rooms[i][j-1], d)
+            rooms[i][j-1] = d
             self.dfs(rooms, i, j-1)
                 
         if j+1 < c and rooms[i][j+1] != -1 and rooms[i][j+1] > d:
-            rooms[i][j+1] = min(rooms[i][j+1], d)
+            rooms[i][j+1] = d
             self.dfs(rooms, i, j+1)
             
 class Test(object):
@@ -92,8 +91,8 @@ t = Test()
 t.test()
 
 """
-Runtime: 240 ms, faster than 82.68% of Python online submissions for Walls and Gates.
-Memory Usage: 19.6 MB, less than 24.21% of Python online submissions for Walls and
+Runtime: 228 ms, faster than 92.37% of Python online submissions for Walls and Gates.
+Memory Usage: 19.7 MB, less than 23.47% of Python online submissions for Walls and
 """
         
     
