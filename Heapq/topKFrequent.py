@@ -70,6 +70,8 @@ class Test(object):
 t = Test()
 t.test_topKFrequent()
 
+# Output
+# ['the', 'is', 'sunny', 'day']
 
 """
 Runtime: 44 ms, faster than 71.88% of Python online submissions for Top K Frequent Words.
