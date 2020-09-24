@@ -32,6 +32,7 @@ After running your function, the 2D grid should be:
 """
 
 INF =  2147483647
+
 class Solution(object):
     def wallsAndGates(self, rooms):
         """
