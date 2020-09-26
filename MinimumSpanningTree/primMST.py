@@ -9,16 +9,18 @@ tree whose sum of edge weights is as small as possible. More generally, any edge
 has a minimum spanning forest, which is a union of the minimum spanning trees for its connected components.
 
 @author: xingya
-
 """
+
+
+
 from collections import defaultdict
 import sys
 
 class Heap():
+    
 ## Min Heaps are binary trees for which every parent node has a value less than or equal to any of its children. 
 ## This implementation uses arrays for which heap[k] <= heap[2*k+1] and heap[k] <= heap[2*k+2] for all k, 
 ## counting elements from zero. 
-
 ## heap[0] is always the smallest item
 
     def __init__(self):
@@ -143,15 +145,14 @@ g.addEdge(7,8,7)
 print(g.primMST())
 
 # Output
-# [[4, 9], [3, 7], [8, 2], [2, 4], [5, 2], [6, 1], [7, 8], [1, 4], [0, 0]]
+# 0 -  1
+# 1 -  2
+# 2 -  3
+# 3 -  4
+# 2 -  5
+# 5 -  6
+# 6 -  7
+# 2 -  8
+# [[4, 9], [3, 7], [7, 1], [6, 2], [5, 4], [8, 2], [2, 8], [1, 4], [0, 0]]
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
- 
+
