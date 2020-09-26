@@ -2,12 +2,25 @@
 """
 Created on Thu Sep 24 09:47:05 2020
 
+[Definition of MST From Wikipedia]
+A minimum spanning tree (MST) or minimum weight spanning tree is a subset of the edges of a connected, edge-weighted undirected graph 
+that connects all the vertices together, without any cycles and with the minimum possible total edge weight. That is, it is a spanning 
+tree whose sum of edge weights is as small as possible. More generally, any edge-weighted undirected graph (not necessarily connected) 
+has a minimum spanning forest, which is a union of the minimum spanning trees for its connected components.
+
 @author: xingya
+
 """
 from collections import defaultdict
 import sys
 
 class Heap():
+## Min Heaps are binary trees for which every parent node has a value less than or equal to any of its children. 
+## This implementation uses arrays for which heap[k] <= heap[2*k+1] and heap[k] <= heap[2*k+2] for all k, 
+## counting elements from zero. 
+
+## heap[0] is always the smallest item
+
     def __init__(self):
         self.size = 0
         self.pos = []
@@ -36,20 +49,34 @@ class Heap():
             v = a[i][0]
             
             a[i], a[smallest] = a[smallest], a[i]
+            # self.pos is used to record the position of a node in the Heap 
             self.pos[u], self.pos[v] = self.pos[v], self.pos[u]
 
             self.heapify(a, n, smallest)
             
     def extractMin(self):
-        minnode = self.array[0]    
+        minnode = self.array[0] 
+        
+        # root node
         u = self.array[0][0]
+        # last node
         v = self.array[self.size-1][0]
         
-        self.pos[u], self.pos[v] = self.pos[v], self.pos[u]
-        
+        # swap root node with last node
+        self.pos[u], self.pos[v] = self.pos[v], self.pos[u]      
         self.array[0], self.array[self.size - 1] = self.array[self.size - 1], self.array[0]
+        
+        # reduce heap size
         self.size -= 1
+        # heapify root
+        self.heapify(self.array, self.size, 0)
+        
         return minnode
+    
+    def put(self, i, w):
+        
+        self.array[i][1] = w
+        self.heapsort()
     
 class Graph():
     def __init__(self, vertice):
@@ -59,41 +86,44 @@ class Graph():
     def addEdge(self, u, v, w):
         self.graph[u].append([v, w])
         self.graph[v].append([u, w])
-        
+    
+    def printArr(self, parent, n): 
+        for i in range(1, n): 
+            print ("% d - % d" % (parent[i], i) )
+            
     def primMST(self):
-        h = Heap()
+
         num = self.v
         parent = [-1]*num
         
+        h = Heap()
+        h.size = self.v
         for node in range(self.v):
             h.array.append([node, sys.maxsize])  
             h.pos.append(node)
             
-        h.size = self.v
-        
         h.array[0][1] = 0
         parent[0] = 0
         
         while h.size > 0:
+            
             minnode = h.extractMin()
-            
-            h.heapsort()
             u = minnode[0]
-            
+
             for neigh in self.graph[u]:
+                
                 v, w = neigh[0], neigh[1]
                 posheap = h.pos[v]
                 
                 if posheap < h.size and w < h.array[posheap][1]:
-                    h.array[posheap][1] = w
-                    
+                    h.put(posheap, w)
                     parent[v] = u
                     
-            h.heapsort()
-            
-        return h.array
+        self.printArr(parent, self.v )  
         
-
+        return h.array
+    
+    
 g = Graph(9)
 g.addEdge(0,1,4)
 g.addEdge(0,7,8)
