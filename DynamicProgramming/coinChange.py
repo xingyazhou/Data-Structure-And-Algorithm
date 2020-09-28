@@ -90,7 +90,7 @@ t = Test()
 t.test()
 
 
-# Time complexity : O(S*n)
+# Time complexity : O(S*n) On each step the algorithm finds the next F(i) in n iterations, where 1 <= i <= S
 # Space complexity : O(S)
 
 """
