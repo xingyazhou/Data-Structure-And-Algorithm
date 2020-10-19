@@ -13,8 +13,7 @@ import subarraySum
 class Test(unittest.TestCase):
     
     def testDiameterOfBinayTree(self):
-
-        print("\nTest Results for diameterOfBinaryTree")
+        print("\nStart Testing diameterOfBinaryTree ...")
         # Buid a Tree
         root = diameterOfBinaryTree.TreeNode(1)
         root.left = diameterOfBinaryTree.TreeNode(2)
@@ -28,13 +27,11 @@ class Test(unittest.TestCase):
         # Calculate the longest length of the path
         pathlen = s.diameterOfBinaryTree(root)
         
-        print(" The longest path: ", pathlen)
+        print("The longest path: ", pathlen)
         self.assertEqual( pathlen , expected_pathlen)
         
     def testPathSum(self):
-
-        print("\nTest Results for pathsum")
-
+        print("\nStart Testing pathsum ...")
         # Build a tree     
         root = pathsum.TreeNode(10)
         root.left = pathsum.TreeNode(5)
@@ -53,13 +50,11 @@ class Test(unittest.TestCase):
         s = pathsum.Solution()
         output = s.pathSum(root, 8)
         
-        print(" The paths that sum to 8 are: ", output)
+        print("The paths that sum to 8 are: ", output)
         assert output == expect
         
     def testPartition(self):
-
-        print("\nTest Results for partition")
-        
+        print("\nStart Testing partition ...")
         # Create a Linked-list
         head = partition.ListNode(1)
         l = [2, 5, 2, 3, 4]
@@ -79,12 +74,12 @@ class Test(unittest.TestCase):
             output.append(r.val)
             r = r.next
             
-        print(" New Partition: [1, 2, 2, 4, 3, 5]", output)      
+        print("New Partition: [1, 2, 2, 4, 3, 5]", output)      
         assert output == expected, "Wrong result, expected output is: [1, 2, 2, 4, 3, 5]"
         
     def testSubarraySum(self):
 
-        print("\nTest Results for subarraySum")
+        print("\nStart Testing subarraySum ...")
 
         nums1 = [3,4,7,2,-3,1,4,2]
         k1 = 7
@@ -93,7 +88,7 @@ class Test(unittest.TestCase):
         s = subarraySum.Solution()
         output1 = s.subarraySum(nums, k1)
         
-        print("Test Case 1: nums = ", nums1, ", k = ", k1)
+        print("SubTest Case 1: nums = ", nums1, ", k = ", k1)
         print("The total number of continuous subarrays: ", output1)
         assert output1 == expected1
         
@@ -101,7 +96,7 @@ class Test(unittest.TestCase):
         k2=2
         expected2 = 2
         output2 = s.subarraySum(nums2, k2)
-        print("\nTest Case 2: nums = ", nums2, ", k = ", k2)
+        print("\nSubTest Case 2: nums = ", nums2, ", k = ", k2)
         print("The total number of continuous subarrays: ", output2)
         assert output2 == expected2
         
