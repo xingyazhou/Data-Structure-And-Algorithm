@@ -74,13 +74,11 @@ class Test(unittest.TestCase):
             output.append(r.val)
             r = r.next
             
-        print("New Partition: [1, 2, 2, 4, 3, 5]", output)      
+        print("New Partition: ", output)      
         assert output == expected, "Wrong result, expected output is: [1, 2, 2, 4, 3, 5]"
         
     def testSubarraySum(self):
-
         print("\nStart Testing subarraySum ...")
-
         nums1 = [3,4,7,2,-3,1,4,2]
         k1 = 7
         expected1 = 4
@@ -99,9 +97,30 @@ class Test(unittest.TestCase):
         print("\nSubTest Case 2: nums = ", nums2, ", k = ", k2)
         print("The total number of continuous subarrays: ", output2)
         assert output2 == expected2
-        
-
  
 if __name__ == '__main__':
     unittest.main()
+    
+# Output
+"""
+Start Testing diameterOfBinaryTree ...
+The longest path:  3
 
+Start Testing partition ...
+New Partition: [1, 2, 2, 4, 3, 5] [1, 2, 2, 4, 3, 5]
+
+Start Testing pathsum ...
+The paths that sum to 8 are:  3
+
+Start Testing subarraySum ...
+SubTest Case 1: nums =  [3, 4, 7, 2, -3, 1, 4, 2] , k =  7
+The total number of continuous subarrays:  4
+
+SubTest Case 2: nums =  [1, 1, 1] , k =  2
+The total number of continuous subarrays:  2
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK
+"""
